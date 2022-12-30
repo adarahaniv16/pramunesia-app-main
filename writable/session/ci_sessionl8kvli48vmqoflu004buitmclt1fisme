@@ -1,0 +1,9 @@
+__ci_last_regenerate|i:1668114033;_ci_previous_url|s:46:"http://localhost:8080/wisatawan/profile/edit/6";is_login_wisatawan|b:1;wisatawan_id|s:1:"6";current_url|s:80:"wisatawan?kota_id=1&tanggal_keberangkatan=2022-11-11&tanggal_berakhir=2022-11-12";error|s:230:"<!-- DEBUG-VIEW START 1 SYSTEMPATH\Validation\Views\list.php -->
+	<div class="errors" role="alert">
+		<ul>
+					<li>Email sudah digunakan</li>
+				</ul>
+	</div>
+
+<!-- DEBUG-VIEW ENDED 1 SYSTEMPATH\Validation\Views\list.php -->
+";__ci_vars|a:3:{s:5:"error";s:3:"old";s:13:"_ci_old_input";s:3:"old";s:21:"_ci_validation_errors";s:3:"old";}_ci_old_input|a:2:{s:3:"get";a:0:{}s:4:"post";a:6:{s:2:"id";s:1:"6";s:4:"nama";s:19:"jadid alif ramadhan";s:5:"email";s:22:"jadidalif123@gmail.com";s:7:"telepon";s:12:"123123123123";s:8:"password";s:0:"";s:13:"passwordVerif";s:0:"";}}_ci_validation_errors|s:47:"a:1:{s:5:"email";s:21:"Email sudah digunakan";}";
