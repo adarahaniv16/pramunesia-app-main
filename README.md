@@ -8,4 +8,3 @@ Anggota:
 2. Fricylia Rusdiana Putri (1910631170022)
 3. Tiara Destiana (1910631170237)
 4. Virna Miftahuljannah (1910631170238)
- 
