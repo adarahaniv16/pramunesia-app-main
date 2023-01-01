@@ -1,0 +1,127 @@
+ERROR - 2023-01-01 08:12:05 --> Error connecting to the database: No connection could be made because the target machine actively refused it.
+
+CRITICAL - 2023-01-01 08:12:05 --> Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it.
+
+in SYSTEMPATH\Database\BaseConnection.php on line 416.
+ 1 SYSTEMPATH\Database\BaseConnection.php(586): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT 1
+FROM `wisatawan`
+WHERE `email` = :email:
+ LIMIT 1', [...], false)
+ 3 SYSTEMPATH\Validation\Rules.php(142): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\Validation\Validation.php(306): CodeIgniter\Validation\Rules->is_unique('jadid@gmail.com', 'email', [...], null)
+ 5 SYSTEMPATH\Validation\Validation.php(173): CodeIgniter\Validation\Validation->processRules('email', 'email', 'jadid@gmail.com', [...], [...])
+ 6 SYSTEMPATH\Controller.php(140): CodeIgniter\Validation\Validation->run()
+ 7 APPPATH\Controllers\Auth.php(89): CodeIgniter\Controller->validate([...])
+ 8 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Auth->prosesRegistrasiWisatawan()
+ 9 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+10 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2023-01-01 08:14:10 --> Invalid file: /admin/dashboard.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('/admin/dashboard.php')
+ 2 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('/admin/dashboard', [], true)
+ 3 APPPATH\Controllers\Auth.php(156): view('/admin/dashboard')
+ 4 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Auth->loginPemandu()
+ 5 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 6 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2023-01-01 08:15:43 --> Invalid file: /admin/dashboard.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('/admin/dashboard.php')
+ 2 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('/admin/dashboard', [], true)
+ 3 APPPATH\Controllers\Auth.php(156): view('/admin/dashboard')
+ 4 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Auth->loginPemandu()
+ 5 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 6 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2023-01-01 08:16:11 --> Invalid file: /admin/dashboard.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('/admin/dashboard.php')
+ 2 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('/admin/dashboard', [], true)
+ 3 APPPATH\Controllers\Auth.php(156): view('/admin/dashboard')
+ 4 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Auth->loginPemandu()
+ 5 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 6 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+ERROR - 2023-01-01 08:16:42 --> Duplicate entry '11232' for key 'IDX_505c1c6901e7b1076866895a7f'
+CRITICAL - 2023-01-01 08:16:42 --> Duplicate entry '11232' for key 'IDX_505c1c6901e7b1076866895a7f'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `pemandu` (`noKta`, `nama`, `email`, `telepon`, `alamat`, `jenis`, `password`, `image`) VALUES (\'11232\', \'Tutik Tresnaati\', \'aaa@ags.com\', \'3333\', \'a\', \'organisasi\', \'$2y$10$Kf/yV254hRVZRt95ZLEmteE6BI6PRIsXWkv3restr.IhvLNwTvrBG\', \'default.png\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `pemandu` (`noKta`, `nama`, `email`, `telepon`, `alamat`, `jenis`, `password`, `image`) VALUES (\'11232\', \'Tutik Tresnaati\', \'aaa@ags.com\', \'3333\', \'a\', \'organisasi\', \'$2y$10$Kf/yV254hRVZRt95ZLEmteE6BI6PRIsXWkv3restr.IhvLNwTvrBG\', \'default.png\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `pemandu` (`noKta`, `nama`, `email`, `telepon`, `alamat`, `jenis`, `password`, `image`) VALUES (\'11232\', \'Tutik Tresnaati\', \'aaa@ags.com\', \'3333\', \'a\', \'organisasi\', \'$2y$10$Kf/yV254hRVZRt95ZLEmteE6BI6PRIsXWkv3restr.IhvLNwTvrBG\', \'default.png\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1904): CodeIgniter\Database\BaseConnection->query('INSERT INTO `pemandu` (`noKta`, `nama`, `email`, `telepon`, `alamat`, `jenis`, `password`, `image`) VALUES (:noKta:, :nama:, :email:, :telepon:, :alamat:, :jenis:, :password:, :image:)', [...], false)
+ 5 SYSTEMPATH\Model.php(278): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(738): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(666): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Controllers\Auth.php(286): CodeIgniter\Model->insert([...])
+ 9 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Auth->prosesRegistrasiPemandu()
+10 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+11 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2023-01-01 08:17:13 --> Invalid file: /admin/dashboard.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('/admin/dashboard.php')
+ 2 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('/admin/dashboard', [], true)
+ 3 APPPATH\Controllers\Auth.php(156): view('/admin/dashboard')
+ 4 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Auth->loginPemandu()
+ 5 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 6 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2023-01-01 08:17:35 --> Invalid file: /admin/dashboard.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('/admin/dashboard.php')
+ 2 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('/admin/dashboard', [], true)
+ 3 APPPATH\Controllers\Auth.php(156): view('/admin/dashboard')
+ 4 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Auth->loginPemandu()
+ 5 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 6 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2023-01-01 08:18:22 --> Invalid file: /admin/dashboard.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('/admin/dashboard.php')
+ 2 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('/admin/dashboard', [], true)
+ 3 APPPATH\Controllers\Auth.php(156): view('/admin/dashboard')
+ 4 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Auth->loginPemandu()
+ 5 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 6 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2023-01-01 08:19:37 --> Invalid file: /admin/dashboard.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('/admin/dashboard.php')
+ 2 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('/admin/dashboard', [], true)
+ 3 APPPATH\Controllers\Auth.php(156): view('/admin/dashboard')
+ 4 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Auth->loginPemandu()
+ 5 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 6 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2023-01-01 08:19:39 --> Invalid file: /admin/dashboard.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('/admin/dashboard.php')
+ 2 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('/admin/dashboard', [], true)
+ 3 APPPATH\Controllers\Auth.php(156): view('/admin/dashboard')
+ 4 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Auth->loginPemandu()
+ 5 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 6 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2023-01-01 08:19:40 --> Invalid file: /admin/dashboard.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('/admin/dashboard.php')
+ 2 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('/admin/dashboard', [], true)
+ 3 APPPATH\Controllers\Auth.php(156): view('/admin/dashboard')
+ 4 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Auth->loginPemandu()
+ 5 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 6 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
