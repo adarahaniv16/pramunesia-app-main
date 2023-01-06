@@ -1,0 +1,112 @@
+ERROR - 2023-01-06 09:43:26 --> Unknown column 'nomor_tiket' in 'field list'
+CRITICAL - 2023-01-06 09:43:26 --> Unknown column 'nomor_tiket' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `manual_transaksi` (`kota_id`, `nomor_tiket`, `tanggal_pemesanan`, `tanggal_keberangkatan`, `tanggal_berakhir`, `pemandu_id`, `status`, `nama_wisatawan`, `telepon_wisatawan`) VALUES (\'1\', \'202301060943267\', \'2023-01-06\', \'2023-01-07\', \'2023-01-08\', \'7\', \'belum dibayar\', \'test\', \'0111\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `manual_transaksi` (`kota_id`, `nomor_tiket`, `tanggal_pemesanan`, `tanggal_keberangkatan`, `tanggal_berakhir`, `pemandu_id`, `status`, `nama_wisatawan`, `telepon_wisatawan`) VALUES (\'1\', \'202301060943267\', \'2023-01-06\', \'2023-01-07\', \'2023-01-08\', \'7\', \'belum dibayar\', \'test\', \'0111\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `manual_transaksi` (`kota_id`, `nomor_tiket`, `tanggal_pemesanan`, `tanggal_keberangkatan`, `tanggal_berakhir`, `pemandu_id`, `status`, `nama_wisatawan`, `telepon_wisatawan`) VALUES (\'1\', \'202301060943267\', \'2023-01-06\', \'2023-01-07\', \'2023-01-08\', \'7\', \'belum dibayar\', \'test\', \'0111\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1904): CodeIgniter\Database\BaseConnection->query('INSERT INTO `manual_transaksi` (`kota_id`, `nomor_tiket`, `tanggal_pemesanan`, `tanggal_keberangkatan`, `tanggal_berakhir`, `pemandu_id`, `status`, `nama_wisatawan`, `telepon_wisatawan`) VALUES (:kota_id:, :nomor_tiket:, :tanggal_pemesanan:, :tanggal_keberangkatan:, :tanggal_berakhir:, :pemandu_id:, :status:, :nama_wisatawan:, :telepon_wisatawan:)', [...], false)
+ 5 SYSTEMPATH\Model.php(278): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(738): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(666): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Controllers\Pemandu.php(510): CodeIgniter\Model->insert([...])
+ 9 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Pemandu->prosesTambahManualTransaksi()
+10 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pemandu))
+11 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+ERROR - 2023-01-06 09:44:51 --> Unknown column 'tanggal_pemesanan' in 'field list'
+CRITICAL - 2023-01-06 09:44:51 --> Unknown column 'tanggal_pemesanan' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `manual_transaksi` (`kota_id`, `nomor_tiket`, `tanggal_pemesanan`, `tanggal_keberangkatan`, `tanggal_berakhir`, `pemandu_id`, `status`, `nama_wisatawan`, `telepon_wisatawan`) VALUES (\'1\', \'202301060944517\', \'2023-01-06\', \'2023-01-07\', \'2023-01-08\', \'7\', \'belum dibayar\', \'test\', \'0111\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `manual_transaksi` (`kota_id`, `nomor_tiket`, `tanggal_pemesanan`, `tanggal_keberangkatan`, `tanggal_berakhir`, `pemandu_id`, `status`, `nama_wisatawan`, `telepon_wisatawan`) VALUES (\'1\', \'202301060944517\', \'2023-01-06\', \'2023-01-07\', \'2023-01-08\', \'7\', \'belum dibayar\', \'test\', \'0111\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `manual_transaksi` (`kota_id`, `nomor_tiket`, `tanggal_pemesanan`, `tanggal_keberangkatan`, `tanggal_berakhir`, `pemandu_id`, `status`, `nama_wisatawan`, `telepon_wisatawan`) VALUES (\'1\', \'202301060944517\', \'2023-01-06\', \'2023-01-07\', \'2023-01-08\', \'7\', \'belum dibayar\', \'test\', \'0111\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1904): CodeIgniter\Database\BaseConnection->query('INSERT INTO `manual_transaksi` (`kota_id`, `nomor_tiket`, `tanggal_pemesanan`, `tanggal_keberangkatan`, `tanggal_berakhir`, `pemandu_id`, `status`, `nama_wisatawan`, `telepon_wisatawan`) VALUES (:kota_id:, :nomor_tiket:, :tanggal_pemesanan:, :tanggal_keberangkatan:, :tanggal_berakhir:, :pemandu_id:, :status:, :nama_wisatawan:, :telepon_wisatawan:)', [...], false)
+ 5 SYSTEMPATH\Model.php(278): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(738): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(666): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Controllers\Pemandu.php(510): CodeIgniter\Model->insert([...])
+ 9 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Pemandu->prosesTambahManualTransaksi()
+10 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pemandu))
+11 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+ERROR - 2023-01-06 09:45:25 --> Unknown column 'tanggal_keberangkatan' in 'field list'
+CRITICAL - 2023-01-06 09:45:25 --> Unknown column 'tanggal_keberangkatan' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `manual_transaksi` (`kota_id`, `nomor_tiket`, `tanggal_pemesanan`, `tanggal_keberangkatan`, `tanggal_berakhir`, `pemandu_id`, `status`, `nama_wisatawan`, `telepon_wisatawan`) VALUES (\'1\', \'202301060945257\', \'2023-01-06\', \'2023-01-07\', \'2023-01-08\', \'7\', \'belum dibayar\', \'test\', \'0111\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `manual_transaksi` (`kota_id`, `nomor_tiket`, `tanggal_pemesanan`, `tanggal_keberangkatan`, `tanggal_berakhir`, `pemandu_id`, `status`, `nama_wisatawan`, `telepon_wisatawan`) VALUES (\'1\', \'202301060945257\', \'2023-01-06\', \'2023-01-07\', \'2023-01-08\', \'7\', \'belum dibayar\', \'test\', \'0111\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `manual_transaksi` (`kota_id`, `nomor_tiket`, `tanggal_pemesanan`, `tanggal_keberangkatan`, `tanggal_berakhir`, `pemandu_id`, `status`, `nama_wisatawan`, `telepon_wisatawan`) VALUES (\'1\', \'202301060945257\', \'2023-01-06\', \'2023-01-07\', \'2023-01-08\', \'7\', \'belum dibayar\', \'test\', \'0111\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1904): CodeIgniter\Database\BaseConnection->query('INSERT INTO `manual_transaksi` (`kota_id`, `nomor_tiket`, `tanggal_pemesanan`, `tanggal_keberangkatan`, `tanggal_berakhir`, `pemandu_id`, `status`, `nama_wisatawan`, `telepon_wisatawan`) VALUES (:kota_id:, :nomor_tiket:, :tanggal_pemesanan:, :tanggal_keberangkatan:, :tanggal_berakhir:, :pemandu_id:, :status:, :nama_wisatawan:, :telepon_wisatawan:)', [...], false)
+ 5 SYSTEMPATH\Model.php(278): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(738): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(666): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Controllers\Pemandu.php(510): CodeIgniter\Model->insert([...])
+ 9 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Pemandu->prosesTambahManualTransaksi()
+10 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pemandu))
+11 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+ERROR - 2023-01-06 09:45:42 --> Unknown column 'tanggal_berakhir' in 'field list'
+CRITICAL - 2023-01-06 09:45:42 --> Unknown column 'tanggal_berakhir' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `manual_transaksi` (`kota_id`, `nomor_tiket`, `tanggal_pemesanan`, `tanggal_keberangkatan`, `tanggal_berakhir`, `pemandu_id`, `status`, `nama_wisatawan`, `telepon_wisatawan`) VALUES (\'1\', \'202301060945427\', \'2023-01-06\', \'2023-01-07\', \'2023-01-08\', \'7\', \'belum dibayar\', \'test\', \'0111\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `manual_transaksi` (`kota_id`, `nomor_tiket`, `tanggal_pemesanan`, `tanggal_keberangkatan`, `tanggal_berakhir`, `pemandu_id`, `status`, `nama_wisatawan`, `telepon_wisatawan`) VALUES (\'1\', \'202301060945427\', \'2023-01-06\', \'2023-01-07\', \'2023-01-08\', \'7\', \'belum dibayar\', \'test\', \'0111\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `manual_transaksi` (`kota_id`, `nomor_tiket`, `tanggal_pemesanan`, `tanggal_keberangkatan`, `tanggal_berakhir`, `pemandu_id`, `status`, `nama_wisatawan`, `telepon_wisatawan`) VALUES (\'1\', \'202301060945427\', \'2023-01-06\', \'2023-01-07\', \'2023-01-08\', \'7\', \'belum dibayar\', \'test\', \'0111\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1904): CodeIgniter\Database\BaseConnection->query('INSERT INTO `manual_transaksi` (`kota_id`, `nomor_tiket`, `tanggal_pemesanan`, `tanggal_keberangkatan`, `tanggal_berakhir`, `pemandu_id`, `status`, `nama_wisatawan`, `telepon_wisatawan`) VALUES (:kota_id:, :nomor_tiket:, :tanggal_pemesanan:, :tanggal_keberangkatan:, :tanggal_berakhir:, :pemandu_id:, :status:, :nama_wisatawan:, :telepon_wisatawan:)', [...], false)
+ 5 SYSTEMPATH\Model.php(278): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(738): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(666): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Controllers\Pemandu.php(510): CodeIgniter\Model->insert([...])
+ 9 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Pemandu->prosesTambahManualTransaksi()
+10 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pemandu))
+11 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+ERROR - 2023-01-06 09:46:03 --> Unknown column 'status' in 'field list'
+CRITICAL - 2023-01-06 09:46:03 --> Unknown column 'status' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `manual_transaksi` (`kota_id`, `nomor_tiket`, `tanggal_pemesanan`, `tanggal_keberangkatan`, `tanggal_berakhir`, `pemandu_id`, `status`, `nama_wisatawan`, `telepon_wisatawan`) VALUES (\'1\', \'202301060946037\', \'2023-01-06\', \'2023-01-07\', \'2023-01-08\', \'7\', \'belum dibayar\', \'test\', \'0111\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `manual_transaksi` (`kota_id`, `nomor_tiket`, `tanggal_pemesanan`, `tanggal_keberangkatan`, `tanggal_berakhir`, `pemandu_id`, `status`, `nama_wisatawan`, `telepon_wisatawan`) VALUES (\'1\', \'202301060946037\', \'2023-01-06\', \'2023-01-07\', \'2023-01-08\', \'7\', \'belum dibayar\', \'test\', \'0111\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `manual_transaksi` (`kota_id`, `nomor_tiket`, `tanggal_pemesanan`, `tanggal_keberangkatan`, `tanggal_berakhir`, `pemandu_id`, `status`, `nama_wisatawan`, `telepon_wisatawan`) VALUES (\'1\', \'202301060946037\', \'2023-01-06\', \'2023-01-07\', \'2023-01-08\', \'7\', \'belum dibayar\', \'test\', \'0111\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1904): CodeIgniter\Database\BaseConnection->query('INSERT INTO `manual_transaksi` (`kota_id`, `nomor_tiket`, `tanggal_pemesanan`, `tanggal_keberangkatan`, `tanggal_berakhir`, `pemandu_id`, `status`, `nama_wisatawan`, `telepon_wisatawan`) VALUES (:kota_id:, :nomor_tiket:, :tanggal_pemesanan:, :tanggal_keberangkatan:, :tanggal_berakhir:, :pemandu_id:, :status:, :nama_wisatawan:, :telepon_wisatawan:)', [...], false)
+ 5 SYSTEMPATH\Model.php(278): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(738): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(666): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Controllers\Pemandu.php(510): CodeIgniter\Model->insert([...])
+ 9 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Pemandu->prosesTambahManualTransaksi()
+10 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pemandu))
+11 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+ERROR - 2023-01-06 09:47:39 --> Unknown column 'nama_wisatawan' in 'field list'
+CRITICAL - 2023-01-06 09:47:39 --> Unknown column 'nama_wisatawan' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `manual_transaksi` (`kota_id`, `nomor_tiket`, `tanggal_pemesanan`, `tanggal_keberangkatan`, `tanggal_berakhir`, `pemandu_id`, `status`, `nama_wisatawan`, `telepon_wisatawan`) VALUES (\'1\', \'202301060947397\', \'2023-01-06\', \'2023-01-07\', \'2023-01-08\', \'7\', \'belum dibayar\', \'test\', \'0111\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `manual_transaksi` (`kota_id`, `nomor_tiket`, `tanggal_pemesanan`, `tanggal_keberangkatan`, `tanggal_berakhir`, `pemandu_id`, `status`, `nama_wisatawan`, `telepon_wisatawan`) VALUES (\'1\', \'202301060947397\', \'2023-01-06\', \'2023-01-07\', \'2023-01-08\', \'7\', \'belum dibayar\', \'test\', \'0111\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `manual_transaksi` (`kota_id`, `nomor_tiket`, `tanggal_pemesanan`, `tanggal_keberangkatan`, `tanggal_berakhir`, `pemandu_id`, `status`, `nama_wisatawan`, `telepon_wisatawan`) VALUES (\'1\', \'202301060947397\', \'2023-01-06\', \'2023-01-07\', \'2023-01-08\', \'7\', \'belum dibayar\', \'test\', \'0111\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1904): CodeIgniter\Database\BaseConnection->query('INSERT INTO `manual_transaksi` (`kota_id`, `nomor_tiket`, `tanggal_pemesanan`, `tanggal_keberangkatan`, `tanggal_berakhir`, `pemandu_id`, `status`, `nama_wisatawan`, `telepon_wisatawan`) VALUES (:kota_id:, :nomor_tiket:, :tanggal_pemesanan:, :tanggal_keberangkatan:, :tanggal_berakhir:, :pemandu_id:, :status:, :nama_wisatawan:, :telepon_wisatawan:)', [...], false)
+ 5 SYSTEMPATH\Model.php(278): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(738): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(666): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Controllers\Pemandu.php(510): CodeIgniter\Model->insert([...])
+ 9 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Pemandu->prosesTambahManualTransaksi()
+10 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pemandu))
+11 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+ERROR - 2023-01-06 09:48:05 --> Unknown column 'telepon_wisatawan' in 'field list'
+CRITICAL - 2023-01-06 09:48:05 --> Unknown column 'telepon_wisatawan' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `manual_transaksi` (`kota_id`, `nomor_tiket`, `tanggal_pemesanan`, `tanggal_keberangkatan`, `tanggal_berakhir`, `pemandu_id`, `status`, `nama_wisatawan`, `telepon_wisatawan`) VALUES (\'1\', \'202301060948057\', \'2023-01-06\', \'2023-01-07\', \'2023-01-08\', \'7\', \'belum dibayar\', \'test\', \'0111\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `manual_transaksi` (`kota_id`, `nomor_tiket`, `tanggal_pemesanan`, `tanggal_keberangkatan`, `tanggal_berakhir`, `pemandu_id`, `status`, `nama_wisatawan`, `telepon_wisatawan`) VALUES (\'1\', \'202301060948057\', \'2023-01-06\', \'2023-01-07\', \'2023-01-08\', \'7\', \'belum dibayar\', \'test\', \'0111\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `manual_transaksi` (`kota_id`, `nomor_tiket`, `tanggal_pemesanan`, `tanggal_keberangkatan`, `tanggal_berakhir`, `pemandu_id`, `status`, `nama_wisatawan`, `telepon_wisatawan`) VALUES (\'1\', \'202301060948057\', \'2023-01-06\', \'2023-01-07\', \'2023-01-08\', \'7\', \'belum dibayar\', \'test\', \'0111\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1904): CodeIgniter\Database\BaseConnection->query('INSERT INTO `manual_transaksi` (`kota_id`, `nomor_tiket`, `tanggal_pemesanan`, `tanggal_keberangkatan`, `tanggal_berakhir`, `pemandu_id`, `status`, `nama_wisatawan`, `telepon_wisatawan`) VALUES (:kota_id:, :nomor_tiket:, :tanggal_pemesanan:, :tanggal_keberangkatan:, :tanggal_berakhir:, :pemandu_id:, :status:, :nama_wisatawan:, :telepon_wisatawan:)', [...], false)
+ 5 SYSTEMPATH\Model.php(278): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(738): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(666): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Controllers\Pemandu.php(510): CodeIgniter\Model->insert([...])
+ 9 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Pemandu->prosesTambahManualTransaksi()
+10 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pemandu))
+11 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
